@@ -15,7 +15,6 @@
 header { 
 
     border-top: 5px darkblue solid;
-    border-bottom: 2px whitesmoke solid;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -49,8 +48,7 @@ header {
 }
 
 
-/*BODY HOME: BUSCADOR*/
-
+/* HOME: BUSCADOR*/
 
 .videoFondo {
     background-image: url(../img/ciudad\ de\ posadas\ lol.png);
@@ -58,6 +56,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-wrap: nowrap;
 }
 
 h1 {
@@ -98,72 +97,74 @@ h1 {
 
 /* HOME: PROPIEDADES EN DESARROLLO */
 
+.estrenar {
+
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px black solid;
+    background: radial-gradient(#3f87a6, blue);
+    box-shadow: 10px 10px 10px;
+
+}
+
 h2 {
-    margin: 20px;
-    padding: 20px;
     color: darkblue;
     font-size: 2rem;
     text-align: center;
     font-family: 'Libre Bodoni', serif;
     font-weight: bold;
-    margin-top: 20px;
-}
-
-.estrenar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .bloqueUno {
-    margin: 50px;
-    padding: 40px;
-    width: 280px;
-    height: 280px;
+    margin: 40px;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
     border: 3px black solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px;
     text-align: center;
+    background-color: white;
 }
 
 .bloqueUno:hover {
     background-color: cornflowerblue;
-    height: 270px;
-    width: 270px;
+    height: 240px;
+    width: 240px;
 }
 
 .bloqueDos {
-    margin: 50px;
-    padding: 40px;
-    width: 280px;
-    height: 280px;
+    margin: 40px;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
     border: 3px black solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px;
     text-align: center;
+    background-color: white;
 }
 
 .bloqueDos:hover {
     background-color: cornflowerblue;
-    height: 270px;
-    width: 270px;
+    height: 240px;
+    width: 240px;
 }
 
 .bloqueTres {
-    margin: 50px;
-    padding: 40px;
-    width: 280px;
-    height: 280px;
+    margin: 40px;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
     border: 3px black solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px;
     text-align: center;
+    background-color: white;
 }
 
 .bloqueTres:hover {
     background-color: cornflowerblue;
-    height: 270px;
-    width: 270px;
+    height: 240px;
+    width: 240px;
 }
 
 .bloque p {
@@ -196,12 +197,12 @@ h3 {
 
 .destacadas {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
 }
 
 .bloque1 {
-    grid-area: "bloque1";
     margin: 35px;
     padding: 10px;
     width: 230px;
@@ -222,7 +223,6 @@ h3 {
 
 
 .bloque2 {
-    grid-area: "bloque2";
     margin: 35px;
     padding: 10px;
     width: 230px;
@@ -242,7 +242,6 @@ h3 {
 }
 
 .bloque3 {
-    grid-area: "bloque3";
     margin: 35px;
     padding: 10px;
     width: 230px;
@@ -262,7 +261,6 @@ h3 {
 }
 
 .bloque4 {
-    grid-area: "bloque4";
     margin: 35px;
     padding: 10px;
     width: 230px;
@@ -302,6 +300,14 @@ h4 {
 
 /* HOME: NEWSLETTER*/
 
+.box {
+    background-color: red;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: ;
+}
+
 h5 {
     margin: 20px;
     padding: 20px;
@@ -311,13 +317,6 @@ h5 {
     font-family: 'Libre Bodoni', serif;
     font-weight: bold;
     margin-top: 30px;
-}
-
-.box {
-    background-color: red;
-    height: 150px;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .newsletter {
@@ -336,40 +335,157 @@ h5 {
 /* HOME: FOOTER*/
 
 footer {
-    background-color: rgb(153, 150, 150);
+    background-color: darkslategray;
     height: 25rem ;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 0.5rem;
+    margin-top: 0.1rem;
+}
+
+/* ALQUILAR: ALQUILERES */
+
+
+.alquileres {
+    align-items: center;
+    justify-content: center;
+    border: 1px black solid;
+    margin: 70px;
+}
+
+.bloqueA {
+    margin: 50px;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    border: 3px black solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px;
+    text-align: center;
+}
+
+.bloqueA:hover {
+    background-color: lightcoral;
+    height: 190px;
+    width: 190px;
+}
+
+.bloqueB {
+    margin: 50px;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    border: 3px black solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px;
+    text-align: center;
+}
+
+.bloqueB:hover {
+    background-color: lightcoral;
+    height: 190px;
+    width: 190px;
+}
+
+.bloqueC {
+    margin: 50px;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    border: 3px black solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px;
+    text-align: center;
+}
+
+.bloqueC:hover {
+    background-color: lightcoral;
+    height: 190px;
+    width: 190px;
+}
+
+.bloqueD {
+    margin: 50px;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    border: 3px black solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px;
+    text-align: center;
+}
+
+.bloqueD:hover {
+    background-color: lightcoral;
+    height: 190px;
+    width: 190px;
+}
+
+.bloqueE {
+    margin: 50px;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    border: 3px black solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px;
+    text-align: center;
+}
+
+.bloqueE:hover {
+    background-color: lightcoral;
+    height: 190px;
+    width: 190px;
+}
+
+.bloqueF {
+    margin: 50px;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    border: 3px black solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px;
+    text-align: center;
+}
+
+.bloqueF:hover {
+    background-color: lightcoral;
+    height: 190px;
+    width: 190px;
+}
+
+.bloque p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ALQUILAR: NEWSLETTER*/
+
+
+.box2 {
+    background-color: blue;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
-/* HOME: PROPIEDADES GRID */
+/* ALQUILAR: PROPIEDADES GRID */
 
-.estrenar {
+.alquileres {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas:"bloqueUno bloqueDos bloqueTres"
-                        "edif1 edif2 edif3";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "bloqueA bloqueB bloqueC"
+                        "bloqueD bloqueE bloqueF";
 
-    column-gap: 10px;
+    column-gap: 0.1rem;
     justify-content: center;
     justify-items: center;
     align-items: center;
 }
 
-
-.destacadas {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas: "bloque1 bloque2 bloque3 bloque4"
-                        "propiedad propiedad propiedad propiedad";
-
-    column-gap: 1.1rem;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
 
 
 /* Media Queries */
@@ -406,13 +522,12 @@ footer {
 @media screen and (min-width: 576px) and (max-width: 992px){
 
     .botonera nav li ul a {
-        display: flex;
-        justify-content: ;
+        display: none;
     }
 
     .estrenar {
         grid-template-columns: repeat(2,1fr);
-    grid-template-areas:"bloqueUno bloqueDos"
+        grid-template-areas:"bloqueUno bloqueDos"
                         "edificio1 edificio2";
 
     column-gap: 2rem;
