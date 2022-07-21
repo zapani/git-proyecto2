@@ -14,6 +14,9 @@
 
 header { 
 
+    display: flex;
+    flex-direction: row;
+
     border-top: 5px darkblue solid;
     background-color: white;
     display: flex;
@@ -23,21 +26,25 @@ header {
 }
 
 .botonera {
+    display: flex;
     margin-right: 80px;
 }
 
 .botonera ul {
-    display: flex;
+
     justify-content: space-between;
+
 }
 
 .botonera ul li {
+
     margin: 1rem;
     display: inline-block;
     margin-left: 1rem;
 }
 
 .botonera ul li a {
+
     text-decoration: none;
     color: darkblue;
     font-size: 1rem;
@@ -54,9 +61,9 @@ header {
     background-image: url(../img/ciudad\ de\ posadas\ lol.png);
     height: 25rem;
     background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 h1 {
@@ -104,9 +111,9 @@ h1 {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: 1px black solid;
-    background: radial-gradient(#3f87a6, blue);
+    background-color: whitesmoke;
     box-shadow: 10px 10px 10px;
 
 }
@@ -119,165 +126,67 @@ h2 {
     font-weight: bold;
 }
 
-.bloqueUno {
-    margin: 40px;
-    padding: 30px;
-    width: 250px;
-    height: 250px;
-    border: 3px black solid;
-    text-align: center;
-    background-color: white;
+.bloque {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.bloqueUno:hover {
-    background-color: cornflowerblue;
-    height: 240px;
-    width: 240px;
+.imgDesarrollo {
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
 }
 
-.bloqueDos {
-    margin: 40px;
-    padding: 30px;
-    width: 250px;
-    height: 250px;
-    border: 3px black solid;
-    text-align: center;
-    background-color: white;
-}
-
-.bloqueDos:hover {
-    background-color: cornflowerblue;
-    height: 240px;
-    width: 240px;
-}
-
-.bloqueTres {
-    margin: 40px;
-    padding: 30px;
-    width: 250px;
-    height: 250px;
-    border: 3px black solid;
-    text-align: center;
-    background-color: white;
-}
-
-.bloqueTres:hover {
-    background-color: cornflowerblue;
-    height: 240px;
-    width: 240px;
-}
-
-.bloque p {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
 
 
 /* HOME: PROPIEDADES DESTACADAS*/ 
 
 
 .ciudadNoche {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-image: url(../img/posadas\ noche.jpg);
     height: 33rem;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 h3 {
-    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
     padding: 20px;
     color: red;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     text-align: center;
     font-family: 'Libre Bodoni', serif; 
     font-weight: bold;
-    margin-top: 30px;
 }  
 
 .destacadas {
+    margin: 60px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+
 }
 
-.bloque1 {
-    margin: 35px;
-    padding: 10px;
-    width: 230px;
-    height: 350px;
+.imgDestacadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    width: 13em;
+    height: 16em;
     border: 3px black solid;
-    background-color:indianred;
-    text-align: center;
-    box-shadow: 10px 10px 20px;
-    line-height: 150px;
-    opacity: 70%;
-}
-
-.bloque1:hover {
-    background-color: indianred;
-    height: 370px;
-    width: 235px;
+    object-fit: Cover;
+    box-shadow: 10px 10x 20px;
 }
 
 
-.bloque2 {
-    margin: 35px;
-    padding: 10px;
-    width: 230px;
-    height: 350px;
-    border: 3px black solid;
-    background-color:indianred;
-    text-align: center;
-    box-shadow: 10px 10px 20px;
-    line-height: 150px;
-    opacity: 70%;
-}
-
-.bloque2:hover {
-    background-color: indianred;
-    height: 370px;
-    width: 235px;
-}
-
-.bloque3 {
-    margin: 35px;
-    padding: 10px;
-    width: 230px;
-    height: 350px;
-    border: 3px black solid;
-    background-color:indianred;
-    text-align: center;
-    box-shadow: 10px 10px 20px;
-    line-height: 150px;
-    opacity: 70%;
-}
-
-.bloque3:hover {
-    background-color: indianred;
-    height: 370px;
-    width: 235px;
-}
-
-.bloque4 {
-    margin: 35px;
-    padding: 10px;
-    width: 230px;
-    height: 350px;
-    border: 3px black solid;
-    background-color:indianred;
-    text-align: center;
-    box-shadow: 10px 10px 20px;
-    line-height: 150px;
-    opacity: 70%;
-}
-
-.bloque4:hover {
-    background-color: indianred;
-    height: 370px;
-    width: 235px;
-}
 
 /* HOME: SERVICIOS*/
 
@@ -301,6 +210,7 @@ h4 {
 /* HOME: NEWSLETTER*/
 
 .box {
+
     background-color: red;
     height: 150px;
     background-size: cover;
@@ -346,119 +256,36 @@ footer {
 
 
 .alquileres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    background-size: cover;
     border: 1px black solid;
-    margin: 70px;
-}
-
-.bloqueA {
     margin: 50px;
-    padding: 40px;
-    width: 200px;
-    height: 200px;
-    border: 3px black solid;
-    border-radius: 5px;
     box-shadow: 10px 10px 20px;
-    text-align: center;
 }
 
-.bloqueA:hover {
-    background-color: lightcoral;
-    height: 190px;
-    width: 190px;
-}
+.bloqueAlquileres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 100px;
+    padding: 100px;
 
-.bloqueB {
-    margin: 50px;
-    padding: 40px;
-    width: 200px;
-    height: 200px;
     border: 3px black solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px;
+
+}
+
+.imgAlquileres {
+    margin: 40px;
+    width: 10em;
+    height: 10em;
     text-align: center;
+    object-fit: Cover;
 }
 
-.bloqueB:hover {
-    background-color: lightcoral;
-    height: 190px;
-    width: 190px;
-}
-
-.bloqueC {
-    margin: 50px;
-    padding: 40px;
-    width: 200px;
-    height: 200px;
-    border: 3px black solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px;
-    text-align: center;
-}
-
-.bloqueC:hover {
-    background-color: lightcoral;
-    height: 190px;
-    width: 190px;
-}
-
-.bloqueD {
-    margin: 50px;
-    padding: 40px;
-    width: 200px;
-    height: 200px;
-    border: 3px black solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px;
-    text-align: center;
-}
-
-.bloqueD:hover {
-    background-color: lightcoral;
-    height: 190px;
-    width: 190px;
-}
-
-.bloqueE {
-    margin: 50px;
-    padding: 40px;
-    width: 200px;
-    height: 200px;
-    border: 3px black solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px;
-    text-align: center;
-}
-
-.bloqueE:hover {
-    background-color: lightcoral;
-    height: 190px;
-    width: 190px;
-}
-
-.bloqueF {
-    margin: 50px;
-    padding: 40px;
-    width: 200px;
-    height: 200px;
-    border: 3px black solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px;
-    text-align: center;
-}
-
-.bloqueF:hover {
-    background-color: lightcoral;
-    height: 190px;
-    width: 190px;
-}
-
-.bloque p {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
 
 /* ALQUILAR: NEWSLETTER*/
 
@@ -492,58 +319,28 @@ footer {
 
 @media screen and (max-width: 576px) {
 
-    .botonera nav ul li a {
-        display: none;
-    }
-
-
-    .estrenar {
-        display: flex;
-        flex-wrap: wrap;
-        grid-template-columns: 1,1fr;
-        grid-template-areas: "main"
-                            "bloqueUno"
-                            "edificio1";
-    }
-
-
     .destacadas {
-        display: flex;
-        flex-wrap: nowrap;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-areas: "main main"
-                            "bloque1 bloque2"
-                            "propiedad propiedad";
+        justify-content:center ;
     }
+
+
 }
 
 
 
 @media screen and (min-width: 576px) and (max-width: 992px){
-
-    .botonera nav li ul a {
-        display: none;
-    }
-
-    .estrenar {
-        grid-template-columns: repeat(2,1fr);
-        grid-template-areas:"bloqueUno bloqueDos"
-                        "edificio1 edificio2";
-
-    column-gap: 2rem;
-    }
-
     .destacadas {
-        grid-template-columns: repeat(3,1fr);
-        grid-template-areas: "bloque1 bloque2 bloque3"
-                            "propiedad propiedad propiedad";
-    
-        column-gap: 1.1rem;
-
-
+        justify-content: center;
     }
 }
 
 @media screen and (min-width: 992px) {
-    
+    .destacadas {
+        justify-content: center;
+    }
 }
+
+@media screen and (max-width: 800px) {
+    .ciudadNoche {
+        justify-content: center;
+    }
