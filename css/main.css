@@ -8,8 +8,8 @@
 }
 
 .logoPrincipal {
-    width: 120px;
-    margin-left: 50px;
+    width: 110px;
+    margin-left: 10px;
 }
 
 header { 
@@ -17,13 +17,26 @@ header {
     display: flex;
     flex-direction: row;
 
-    border-top: 5px darkblue solid;
     background-color: white;
     display: flex;
     justify-content: space-between;
-    align-items:center; 
+    align-items: center; 
 
 }
+
+
+.fondo-nav {
+    background-color: white;
+
+}
+
+.negrita-texto {
+    font-weight: bold;
+    text-decoration: dashed;
+    font-size: 1rem;
+}
+
+
 
 .botonera {
     display: flex;
@@ -254,36 +267,38 @@ footer {
 
 /* ALQUILAR: ALQUILERES */
 
-
 .alquileres {
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-size: cover;
+
     border: 1px black solid;
-    margin: 50px;
+    margin: 70px;
     box-shadow: 10px 10px 20px;
+
 }
 
 .bloqueAlquileres {
+
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 100px;
-    padding: 100px;
+    flex-wrap: wrap;
+    justify-content:space-between;
 
     border: 3px black solid;
+    width: 100%;
 
 }
 
 .imgAlquileres {
-    margin: 40px;
-    width: 10em;
-    height: 10em;
+
+    margin: 30px;
+    width: 15em;
+    height: 15em;
     text-align: center;
     object-fit: Cover;
+
 }
 
 
@@ -301,16 +316,8 @@ footer {
 /* ALQUILAR: PROPIEDADES GRID */
 
 .alquileres {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: "bloqueA bloqueB bloqueC"
-                        "bloqueD bloqueE bloqueF";
-
-    column-gap: 0.1rem;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
+
 }
 
 
