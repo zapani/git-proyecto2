@@ -115,6 +115,10 @@ h1 {
 
 }
 
+.caja:hover {
+
+
+}
 /* HOME: PROPIEDADES EN DESARROLLO */
 
 .estrenar {
@@ -156,17 +160,6 @@ h2 {
 
 /* HOME: PROPIEDADES DESTACADAS*/ 
 
-
-.ciudadNoche {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(../img/posadas\ noche.jpg);
-    height: 33rem;
-    background-size: cover;
-}
-
 h3 {
     display: flex;
     flex-direction: row;
@@ -180,10 +173,11 @@ h3 {
 }  
 
 .destacadas {
-    margin: 60px;
+    margin: 10px;
     display: flex;
     justify-content: space-between;
     width: 90%;
+    background-size: cover;
 
 }
 
@@ -335,19 +329,35 @@ footer {
 
 
 
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 768px){
+    
+    .videoFondo {
+        justify-content: center;
+    }
+    .destacadas {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .videoFondo {
+        justify-content: center;
+    }
+    
     .destacadas {
         justify-content: center;
     }
 }
 
-@media screen and (min-width: 992px) {
-    .destacadas {
-        justify-content: center;
-    }
-}
+@media screen and (min-width: 992px){
 
-@media screen and (max-width: 800px) {
-    .ciudadNoche {
-        justify-content: center;
+    .videoFondo{
+
+        justify-content:space-between;
     }
+    .destacadas {
+    }
+
+
+
