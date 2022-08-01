@@ -1,0 +1,12 @@
+
+$color-principal: rgb(207, 10, 10);
+$color-secundario: rgb(6, 6, 121); 
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center; 
+}
