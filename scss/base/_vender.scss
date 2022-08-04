@@ -1,0 +1,26 @@
+/* VENDER */
+
+.mainV {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .formularioVender {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 50px;
+        width: 40%;
+    }
+    .imgVender {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 30px;
+        width: 50%;
+        justify-content: right;
+        box-shadow: 5px 5px 5px 5px grey;
+    }
+    .pVender {
+        margin: 50px;
+        text-align: center;
+    }
+}

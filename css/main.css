@@ -1,63 +1,170 @@
+/* ALQUILERES */
+@import url("https://fonts.googleapis.com/css2? family= Libre+Bodoni:ital,wght@1,700 & display=swap");
+.botoneraAlq {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap; }
 
-@import url('https://fonts.googleapis.com/css2? family= Libre+Bodoni:ital,wght@1,700 & display=swap');
-
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-.logoPrincipal {
-    width: 110px;
-    margin-left: 10px;
-}
-
-header { 
-
+.alquileres {
+  margin: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  margin: 70px;
+  box-shadow: 10px 10px 10px 10px grey; }
+  .alquileres .bloqueAlquileres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px whitesmoke;
+    width: 100%; }
+  .alquileres .imgAlquileres {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin: 30px;
+    width: 15em;
+    height: 15em;
+    text-align: center;
+    object-fit: Cover; }
 
+.box2 {
+  background-color: #060679;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .box2 h5 {
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Libre Bodoni', serif;
+    font-weight: bold;
+    margin-top: 30px; }
+  .box2 .newsletter {
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Libre Bodoni', serif;
+    font-weight: bold;
+    margin-top: -30px; }
+
+/* COMPRAR: MAIN */
+.comprar {
+  margin: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  margin: 70px;
+  box-shadow: 10px 10px 10px 10px grey; }
+  .comprar .bloqueComprar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; }
+  .comprar .imgComprar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 30px;
+    width: 15em;
+    height: 15em;
+    object-fit: Cover; }
+
+/* VENDER */
+.mainV {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .mainV .formularioVender {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 50px;
+    width: 40%; }
+  .mainV .imgVender {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 30px;
+    width: 50%;
+    justify-content: right;
+    box-shadow: 5px 5px 5px 5px grey; }
+  .mainV .pVender {
+    margin: 50px;
+    text-align: center; }
+
+/* CONTACTO */
+.mainC {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .mainC .formularioContacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 50px;
+    width: 40%; }
+  .mainC .pContacto {
+    margin: 50px;
+    text-align: center; }
+  .mainC .map-responsive {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    height: 0; }
+  .mainC .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+  * .logoPrincipal {
+    width: 110px;
+    margin-left: 10px; }
+  * header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     background-color: white;
     justify-content: space-between;
-    align-items: center; 
-
-}
-
-.fondo-nav {
-    background-color: white;
-
-}
-
-.negrita-texto {
+    align-items: center; }
+  * .fondo-nav {
+    background-color: white; }
+  * .negrita-texto {
     font-weight: bold;
     text-decoration: dashed;
-    font-size: 1rem;
-
-}
-
+    font-size: 1rem; }
 
 /*
 .botonera {
     display: flex;
     margin-right: 80px;
 }
-
 .botonera ul {
-
     justify-content: space-between;
-
 }
-
 .botonera ul li {
-
     margin: 1rem;
     display: inline-block;
     margin-left: 1rem;
 }
-
 .botonera ul li a {
-
     text-decoration: none;
     color: darkblue;
     font-size: 1rem;
@@ -67,44 +174,34 @@ header {
     font-weight: bold;
 }
 */
-
 /* HOME: BUSCADOR*/
-
 .videoFondo {
-    background-image: url(../img/ciudad\ de\ posadas\ lol.png);
-    height: 25rem;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    object-fit: cover;
-
-}
-
-h1 {
-    color:red;
+  background-image: url(../img/ciudad-posdas.png);
+  height: 25rem;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  object-fit: cover; }
+  .videoFondo h1 {
+    color: #cf0a0a;
     font-size: 2rem;
     text-align: center;
-    font-family:'Libre Bodoni', serif;
+    font-family: 'Libre Bodoni', serif;
     font-weight: bold;
-    display: flex;
-    
-}
-
-.caja {
-    border-top: 2px solid red;
+    display: flex; }
+  .videoFondo .caja {
+    border-top: 2px solid #cf0a0a;
     border-radius: 4px;
     height: 250px;
     width: 500px;
     margin: 30px;
-
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-
-    background-color: rgb(231, 226, 226);
+    background-color: #e7e2e2;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -112,87 +209,50 @@ h1 {
     justify-content: space-evenly;
     box-shadow: 2px 2px 10px;
     opacity: 80%;
-
-    max-width: 90%;
-
-}
+    max-width: 90%; }
 
 /* HOME: PROPIEDADES EN DESARROLLO */
-
 .estrenar {
-
-    margin: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-    border: 1px black solid;
-    background-color: whitesmoke;
-    box-shadow: 10px 10px 10px;
-
-
-}
-
-h2 {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px black solid;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 10px; }
+  .estrenar h2 {
     margin: auto;
-    color: darkblue;
+    color: #060679;
     font-size: 2rem;
     text-align: center;
-    font-weight: bold;
-}
-
-/*
-.bloque {
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-
-}
-*/
-
-.imgDesarrollo {
-
+    font-weight: bold; }
+  .estrenar .imgDesarrollo {
     width: 25em;
     height: 25em;
     display: flex;
-    object-fit: cover;
-}
+    object-fit: cover; }
 
-
-
-/* HOME: PROPIEDADES DESTACADAS*/ 
-
-
+/* HOME: PROPIEDADES DESTACADAS*/
 .destacadas {
-
-    margin: 50px;
-    padding: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: whitesmoke;
-    box-shadow: 5px 5px 5px 5px grey;
-    object-fit: cover;
-
-}
-
-h3 {
-
+  margin: 50px;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 5px 5px grey;
+  object-fit: cover; }
+  .destacadas h3 {
     display: flex;
     flex-direction: column;
     margin: 10px;
     padding: 20px;
-    color: red;
+    color: #cf0a0a;
     font-size: 3em;
     text-align: center;
-    font-weight: bold;
-}  
-
-
-.imgDestacadas {
-
+    font-weight: bold; }
+  .destacadas .imgDestacadas {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -201,50 +261,33 @@ h3 {
     width: 13em;
     height: 16em;
     border: 3px black solid;
-    object-fit: Cover;
-
-}
-
-.imgDestacadas:hover {
-
+    object-fit: Cover; }
+  .destacadas .imgDestacadas:hover {
     transition: ease-in-out;
     opacity: 60%;
-    color: whitesmoke;
-}
-
-
+    color: whitesmoke; }
 
 /* HOME: SERVICIOS*/
-
 h4 {
-    color: darkblue;
-    font-size: 1.5rem;
-    font-family: 'Libre Bodoni', serif; 
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-left: 7rem;
-}
-
-.servicios {
-    background-color: white;
+  color: darkblue;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 50px;
+  padding: 70px;
+  text-align: left; }
+  h4 .servicios {
+    background-color: whitesmoke;
     height: 200px;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-
+    background-repeat: no-repeat; }
 
 /* HOME: NEWSLETTER*/
-
 .box {
-
-    background-color: red;
-    height: 150px;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-h5 {
+  background-color: #cf0a0a;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .box h5 {
     margin: 20px;
     padding: 20px;
     color: black;
@@ -252,10 +295,8 @@ h5 {
     text-align: center;
     font-family: 'Libre Bodoni', serif;
     font-weight: bold;
-    margin-top: 30px;
-}
-
-.newsletter {
+    margin-top: 30px; }
+  .box .newsletter {
     margin: 20px;
     padding: 20px;
     color: black;
@@ -263,299 +304,80 @@ h5 {
     text-align: center;
     font-family: 'Libre Bodoni', serif;
     font-weight: bold;
-    margin-top: -30px;
-}
-
-
+    margin-top: -30px; }
 
 /* HOME: FOOTER*/
-
 footer {
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: black;
-    height: 30rem ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0.1rem;
-}
-
-.logoPrincipal2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: black;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0.1rem; }
+  footer .logoPrincipal2 {
     display: flex;
     flex-direction: column;
     margin: 50px;
     width: 10%;
-    margin-left: 50px;
-}
-
-.botonera {
+    margin-left: 50px; }
+  footer .botonera {
     display: flex;
     flex-direction: column;
     margin-right: 80px;
-    margin-left: 20px;
-}
-
-.botonera ul {
-
+    margin-left: 20px; }
+  footer .botonera ul {
     list-style: none;
-    justify-content: center;
-
-}
-
-.botonera ul li {
-
+    justify-content: center; }
+  footer .botonera ul li {
     margin: 1rem;
-    /*margin-left: 1rem;*/
-}
-
-.botonera ul li a {
-
+    /*margin-left: 1rem;*/ }
+  footer .botonera ul li a {
     color: grey;
     font-size: 1rem;
     margin-bottom: 10px;
     text-decoration: grey;
-    text-transform: uppercase;
-
-}
-
-
-.footerNav {
-
-    font-weight: bold;
-
-}
-
-.tituloFooter {
-
+    text-transform: uppercase; }
+  footer .footerNav {
+    font-weight: bold; }
+  footer .tituloFooter {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap; }
 
+/* Media Querys */
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .estrenar {
+    justify-content: center; }
+  .destacadas {
+    justify-content: center; }
+  .alquileres {
+    justify-content: center; }
+  .formularioVender {
+    justify-content: center; }
+  .imgVender {
+    display: none; }
+  .map-responsive {
+    display: none; } }
 
-
-
-
-/* ALQUILAR: ALQUILERES */
-
-.botoneraAlq {
-
-    margin: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-}
-
-.alquileres {
-    margin: 70px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: whitesmoke;
-
-
-    margin: 70px;
-    box-shadow: 10px 10px 10px 10px grey;
-
-}
-
-.bloqueAlquileres {
-
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .estrenar {
+    flex-direction: column; }
+  .videoFondo {
+    justify-content: center; }
+  .destacadas {
     justify-content: center;
-
-    border: 1px whitesmoke;
-    width: 100%;
-
-}
-
-.imgAlquileres {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 30px;
-    width: 15em;
-    height: 15em;
-    text-align: center;
-    object-fit: Cover;
-
-}
-
-
-/* ALQUILAR: NEWSLETTER*/
-
-.box2 {
-    background-color: blue;
-    height: 150px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-
-/* COMPRAR: MAIN */
-
-
-.comprar {
-    margin: 70px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: whitesmoke;
-
-
-    margin: 70px;
-    box-shadow: 10px 10px 10px 10px grey;
-
-}
-
-.bloqueComprar {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    border: 1px whitesmoke;
-    width: 100%;
-
-}
-
-.imgComprar {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 30px;
-    width: 15em;
-    height: 15em;
-    text-align: center;
-    object-fit: Cover;
-
-}
-
-
-/* VENDER */
-
-
-
-
-.mainV {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.formularioVender {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 50px;
-    width: 40%;
-}
-
-.imgVender {
-    margin: 30px;
-    width: 50%;
-    justify-content: right;
-}
-
-.pVender {
-    margin: 50px;
-    text-align: center;
-}
-
-
-
-
-
-/* CONTACTO */
-
-.mainC {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.formularioContacto {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 50px;
-    width: 40%;
-}
-
-.pContacto {
-    margin: 50px;
-    text-align: center;
-}
-
-
-
-/* Media Queries */
-
-
-
-@media screen and (min-width: 300px) {
-
-    .estrenar {
-        justify-content: center;
-    }
-
-    .destacadas {
-        justify-content:center ;
-    }
-
-    .alquileres {
-        justify-content: center;
-    }
-
-
-}
-
-
-
-@media screen and (min-width: 576px) and (max-width: 768px){
-    
-    .estrenar {
-        flex-direction: column;
-    }
-    .videoFondo {
-        justify-content: center;
-    }
-    .destacadas {
-        justify-content: center;
-        display: flex;
-    }
-
-}
+    display: flex; } }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .videoFondo {
-        justify-content: center;
-    }
-    
-    .destacadas {
-        justify-content: center;
-    }
-}
+  .videoFondo {
+    justify-content: center; }
+  .destacadas {
+    justify-content: center; } }
 
-@media screen and (min-width: 992px){
-
-    .videoFondo{
-
-        justify-content:space-between;
-    }
-    .destacadas {
-
-        justify-content: space-evenly;
-    }
-}
+@media screen and (min-width: 992px) {
+  .videoFondo {
+    justify-content: space-between; }
+  .destacadas {
+    justify-content: space-evenly; } }

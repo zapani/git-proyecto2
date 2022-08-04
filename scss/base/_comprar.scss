@@ -1,0 +1,20 @@
+/* COMPRAR: MAIN */
+
+.comprar {
+    @include caja-principal;
+    .bloqueComprar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .imgComprar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 30px;
+        width: 15em;
+        height: 15em;
+        object-fit: Cover;
+    }
+}
