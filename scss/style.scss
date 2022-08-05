@@ -1,10 +1,10 @@
 $color-principal: rgb(207, 10, 10);
 $color-secundario: rgb(6, 6, 121); 
 
-@import "base/alquilar";
-@import "base/comprar";
-@import "base/vender";
-@import "base/contacto";
+@import "components/alquilar";
+@import "components/comprar";
+@import "components/vender";
+@import "components/contacto";
 
 
 @import url('https://fonts.googleapis.com/css2? family= Libre+Bodoni:ital,wght@1,700 & display=swap');
@@ -194,7 +194,7 @@ h4 {
     h5 {
         margin: 20px;
         padding: 20px;
-        color: black;
+        color: map-get($map: $newsletter-base, $key: color-base);
         font-size: 1.5rem;
         text-align: center;
         font-family: 'Libre Bodoni', serif;
@@ -204,7 +204,7 @@ h4 {
     .newsletter {
         margin: 20px;
         padding: 20px;
-        color: black;
+        color: $color-principal;
         font-size: 25px;
         text-align: center;
         font-family: 'Libre Bodoni', serif;

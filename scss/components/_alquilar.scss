@@ -1,19 +1,7 @@
-@mixin caja-principal {
-    margin: 70px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: whitesmoke;
-    margin: 70px;
-    box-shadow: 10px 10px 10px 10px grey;
-}
 
 /* ALQUILERES */
 
 .botoneraAlq {
-
     margin: 30px;
     display: flex;
     flex-direction: row;
@@ -22,15 +10,7 @@
 }
 
 .alquileres {
-    margin: 70px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: whitesmoke;
-    margin: 70px;
-    box-shadow: 10px 10px 10px 10px grey;
+    @include caja-principal;
     .bloqueAlquileres {
         display: flex;
         flex-wrap: wrap;
