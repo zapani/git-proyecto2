@@ -12,12 +12,24 @@
         margin: 50px;
         width: 40%;
     }
-    .pContacto {
-        margin: 50px;
+    .pContacto1 {
+        color: $color-principal;
+        margin: 30px;
         text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .pContacto2 {
+        margin: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .boton-enviarC {
+        background-color: lightblue;
+        font-weight: bold;
     }
     .map-responsive{
-        width: 50%;
+        width: 30%;
         overflow:hidden;
         position: relative;
         height:0; }

@@ -19,8 +19,21 @@
         justify-content: right;
         box-shadow: 5px 5px 5px 5px grey;
     }
-    .pVender {
+    .pVender1 {
+        color: $color-principal;
         margin: 50px;
         text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .pVender2 {
+        margin: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+    .boton-enviar {
+        background-color: lightblue;
+        font-weight: bold;
     }
 }
+

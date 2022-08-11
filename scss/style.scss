@@ -6,6 +6,9 @@ $color-secundario: rgb(6, 6, 121);
 @import "components/vender";
 @import "components/contacto";
 
+@import "base/mixin";
+@import "base/maps";
+@import "base/extend";
 
 @import url('https://fonts.googleapis.com/css2? family= Libre+Bodoni:ital,wght@1,700 & display=swap');
 
@@ -34,32 +37,6 @@ $color-secundario: rgb(6, 6, 121);
         font-size: 1rem;
     }
 }
-
-
-/*
-.botonera {
-    display: flex;
-    margin-right: 80px;
-}
-.botonera ul {
-    justify-content: space-between;
-}
-.botonera ul li {
-    margin: 1rem;
-    display: inline-block;
-    margin-left: 1rem;
-}
-.botonera ul li a {
-    text-decoration: none;
-    color: darkblue;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    text-decoration: darkblue;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-*/
-
 
 /* HOME: BUSCADOR*/
 
@@ -127,7 +104,7 @@ $color-secundario: rgb(6, 6, 121);
     }
 }
 
-/* HOME: PROPIEDADES DESTACADAS*/ 
+/* HOME: PROPIEDADES DESTACADAS */ 
 
 .destacadas {
     margin: 50px;
@@ -169,18 +146,20 @@ $color-secundario: rgb(6, 6, 121);
 
 /* HOME: SERVICIOS*/
 
-h4 {
-    color: darkblue;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 50px;
-    padding: 70px;
-    text-align:left;
-    .servicios {
-        background-color: whitesmoke;
-        height: 200px;
-        background-size: cover;
-        background-repeat: no-repeat;
+
+.servicios {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background-size: cover;
+    h4 {
+        width: 40%;
+        color: darkblue;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 50px;
+        padding: 70px;
+        text-align:left;
     }
 }
 
@@ -195,21 +174,18 @@ h4 {
         margin: 20px;
         padding: 20px;
         color: map-get($map: $newsletter-base, $key: color-base);
-        font-size: 1.5rem;
-        text-align: center;
+        font-size: map-get($map: $newsletter-base, $key: font-size-base );
+        text-align: map-get($map: $newsletter-base, $key: text-aling-base);
         font-family: 'Libre Bodoni', serif;
-        font-weight: bold;
+        font-weight: map-get($map: $newsletter-base, $key: font-weight-base);
         margin-top: 30px;
     }
     .newsletter {
-        margin: 20px;
-        padding: 20px;
+        @extend %extend-base;
         color: $color-principal;
-        font-size: 25px;
         text-align: center;
         font-family: 'Libre Bodoni', serif;
         font-weight: bold;
-        margin-top: -30px;
     }
 }
 
@@ -219,47 +195,109 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: black;
+    background-color: #202020;
     height: 30rem ;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0.1rem;
+    color: whitesmoke;
+    .todoFooter {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .colum1 {
+        max-width: 200px;
+    }
     .logoPrincipal2 {
         display: flex;
-        flex-direction: column;
-        margin: 50px;
-        width: 10%;
+        margin: 10px;
+        width: 50%;
         margin-left: 50px;
     }
     .botonera {
         display: flex;
         flex-direction: column;
-        margin-right: 80px;
-        margin-left: 20px;
     }
     .botonera ul {
         list-style: none;
         justify-content: center;
     }
     .botonera ul li {
-        margin: 1rem;
-        /*margin-left: 1rem;*/
+        margin: 20px;
     }
     .botonera ul li a {
         color: grey;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 10px;
         text-decoration: grey;
-        text-transform: uppercase;
     }
     .footerNav {
         font-weight: bold;
     }
-    .tituloFooter {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .colum2 {
+        max-width: 600px;
+        margin-top: 50px;
     }
+    .pFooter1 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .row-footer {
+        display: flex;
+        margin: 15px;
+        padding: 5px;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .row-footer img {
+        width: 30px;
+        height: 30px;
+    }
+    .row-footer label {
+        margin-left: 10px;
+    }
+    .colum3 {
+        max-width: 400px;
+        margin-top: 50px;
+    }
+    .pFooter2 {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .row-footer2 {
+        display: flex;
+        margin-top: 15px;
+    }
+    .row-footer2 img {
+        margin: 10px;
+        width: 45px;
+        height: 45px;
+    }
+    .container-footer2 {
+        width: 100%;
+        background-color: #101010;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .row-footer3 {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .row-footer3 img {
+        margin: 10px;
+        width: 100px;
+        height: 110px;
+    }
+    
 }
 
 /* Media Querys */
@@ -287,6 +325,12 @@ footer {
     }
     .map-responsive{
         display: none;
+    }
+    .container-footer {
+        flex-wrap: wrap;
+    }
+    .container-footer2 {
+        flex-wrap: wrap;
     }
 
 }
